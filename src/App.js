@@ -35,8 +35,8 @@ const ProtocolIntegrations = () => {
 function App() {
 
     return (
-        <div className="min-h-screen pb-10 m-4 bg-black text-white items-center text-center justify-center img-center">
-            {/* <Navbar /> */}
+        <div className="min-h-screen pb-10 bg-black text-white items-center text-center justify-center img-center">
+            <Navbar />
             <p className="text-5xl text-center m-5"> Simple ETF-Style Yield</p>
             <p className="text-2xl text-center m-2 p-4">Bundled pools w/ fragmented deposits across protocols in the Aptos ecosystem</p>
             <div className="flex flex-col items-center">

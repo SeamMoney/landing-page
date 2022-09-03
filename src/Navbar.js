@@ -1,7 +1,6 @@
 import React from 'react';
 import Logo from './Logo';
 import { FaBookOpen, FaGithub, FaTwitter } from 'react-icons/fa';
-import { useWeb3 } from '@fewcha/web3-react';
 import { useState } from 'react';
 
 const nav_items = [
@@ -23,7 +22,6 @@ const nav_items = [
 
 export default function Navbar(props) {
     const [isOpen, setIsOpen] = useState('hidden');
-    const { isConnected, network } = useWeb3();
     const toggle = () => {
         setIsOpen(isOpen === '' ? 'hidden' : '');
     }
@@ -63,7 +61,7 @@ export default function Navbar(props) {
                                     <FaBookOpen className=" hover:text-blac " />
                                 </a>
                             </p>
-                        <button className="seam-button m-3" onClick={() => props.showConnectModal(true)}>{!isConnected ? "Connect" : "Connected"}</button>
+                        {/* <button className="seam-button m-3">Launch App</button> */}
                     </ul>
                 </div>
             </div>
