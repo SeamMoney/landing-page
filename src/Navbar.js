@@ -5,16 +5,16 @@ import { useState } from 'react';
 
 const nav_items = [
     {
-        name: 'Home',
-        path: '/'
+        name: 'Vaults',
+        path: "https://app.seam.money/vaults"
     },
     {
         name: 'Explorer',
-        path: '/explorer'
+        path: 'https://app.seam.money/explorer'
     },
     {
-        name: 'staking',
-        path: '/staking',
+        name: 'Staking',
+        path: 'https://app.seam.money/staking',
     },
 
 ];
@@ -28,7 +28,7 @@ export default function Navbar(props) {
     return (
         <nav className=" px-2 sm:px-4 py-2.5 text-white">
             <div className="container flex flex-wrap justify-between items-center mx-auto">
-                <a href="https://www.seam.money" className="flex items-center">
+                <a href="/" className="flex items-center">
                     <Logo />
                 </a>
                 <button data-collapse-toggle="mobile-menu" type="button" onClick={() => toggle()} className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu" aria-expanded="false">
@@ -44,26 +44,12 @@ export default function Navbar(props) {
                                 <a href={item.path} className=" ">{item.name}</a>
                             </li>
                         ))}
-                        <div>
-                            <p className="text-white text-3xl p-2 m-3 rounded-xl hover:bg-white hover:text-blac ">
-                                <a href="https://github.com/SeamMoney/seam">
-                                    <FaGithub className=" hover:text-blac " />
-                                </a>
-                            </p>
-                        </div>
-                            <p className="text-white text-3xl p-2 m-3 rounded-xl hover:bg-white hover:text-blac ">
-                                <a href="https://twitter.com/SeamMoney">
-                                    <FaTwitter className=" hover:text-blac " />
-                                </a>
-                            </p>
-                            <p className="text-white text-3xl p-2 m-3 rounded-xl hover:bg-white hover:text-blac ">
-                                <a href="https://docs.seam.money/">
-                                    <FaBookOpen className=" hover:text-blac " />
-                                </a>
-                            </p>
-                        {/* <button className="seam-button m-3">Launch App</button> */}
+                        
                     </ul>
                 </div>
+                <a style={{display: "table-cell"}} href = "https://app.seam.money" target = "_blank" rel = "noopener noreferrer">
+                    <button className="seam-button m-3 hidden w-full flex flex-col md:block flex">Launch App</button>
+                </a>
             </div>
         </nav>
     );
