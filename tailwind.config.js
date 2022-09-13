@@ -50,7 +50,7 @@ module.exports = {
 				"celo-logo": "url(../public/celo-logo.png)",
 			},
 			gradientColorStops: (theme) => ({
-				primary: '#FF8C00',
+				primary: '#212121',
 				secondary: '#FFA500',
 				danger: '#FFD700',
 			}),

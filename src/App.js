@@ -1,8 +1,10 @@
 import React from "react";
-// import PlatformOverview from "../components/PlatformOverview";
-// import UniIcon from "../components/UniIcon";
 import {dapps} from "./dapp_data.ts";
-import Navbar from "./Navbar";
+import Hero from './components/Hero';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import Navbar from './components/Navbar';
+import styles from "./styles";
 
 const defiDapps = ["Tsunami","Aries","Laminar","hippo","Econia",]
 
@@ -33,42 +35,19 @@ const ProtocolIntegrations = () => {
 }
 
 function App() {
+    Aos.init({
+        duration: 800,
+        offset: 0,
+    });
 
     return (
-        <div className="min-h-screen pb-10 bg-black text-white items-center text-center justify-center img-center">
+        <div className="bg-[#1D1B26] w-full overflow-hidden min-h-screen">
             <Navbar />
-            <p className="text-5xl text-center m-5"> Simple ETF-Style Yield</p>
-            <p className="text-2xl text-center m-2 p-4">Bundled pools w/ fragmented deposits across protocols in the Aptos ecosystem</p>
-            <div className="flex flex-col items-center">
-                <div className="m-4 pb-6 text-center">
-                <p className="text-9xl pl-2">Σ</p>
-                <img className="w-80" src="./Tokenfork.png" alt="" />
+            <div className={`${styles.flexStart}`}>
+                <div className={`${styles.boxWidth}`}>
+                    <Hero />
                 </div>
-            <div className="m-2">
-                <p className="text-2xl text-white">
-                    multi-pool yield stability via a single deposit
-                </p>
             </div>
-            </div>
-            <div className="flex flex-row justify-center m-5 p-2">
-                <a href="/explorer">
-                    <div className="text-center roundedl-xl seam-outline">
-                        <p className="text-3xl pb-4"> Simple module + user explorer for Aptos</p>
-                    <button className="seam-button m-3 text-3xl py-2 px-3">Open Explorer </button>
-                    <div className="text-left p-2 m-2">
-                    <p> - view modules,functions,params of dapps on aptos</p>
-                    <p> - User account overview, recent txs, token holdings,nft stats</p>
-                    <p> - User utils, send tokens, inspect transactions and authorized dapps</p>
-                    <p> - Create and send transactions to any dapp/account on aptos(... in progress  )</p>
-                    </div>
-                    </div>
-                </a>
-            </div>
-            <div className="flex flex-col justify-center m-3 p-3 mb-10 items-center rounded-lg boarder boarder-4 border-white bg-white-opacity-10">
-                <p className="text-3xl font-bold p-2">Integrating with top Aptos protocols</p>
-                <ProtocolIntegrations />      
-            </div>
-                {/* <PlatformOverview/> */}
         </div>
     );
 }
