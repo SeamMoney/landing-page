@@ -41,7 +41,7 @@ function App() {
     });
 
     return (
-        <div className="bg-[#1D1B26] w-full overflow-hidden min-h-screen">
+        <div className=" bg-gradient-to-r from-[#000000] via-[#0085CC] to-[#005DA2] w-full overflow-hidden min-h-screen">
             <Navbar />
             <div className={`${styles.flexStart}`}>
                 <div className={`${styles.boxWidth}`}>

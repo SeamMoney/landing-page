@@ -48,6 +48,7 @@ module.exports = {
 				"team-box-img": "url(../public/home/team-box-img.png)",
 				"logos-img": "url(../public/home/logos-img.png)",
 				"celo-logo": "url(../public/celo-logo.png)",
+				"background-animation": "url('../public/blurry-background.svg')",
 			},
 			gradientColorStops: (theme) => ({
 				primary: '#212121',
