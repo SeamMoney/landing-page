@@ -15,7 +15,7 @@ const Navbar = () => {
   };
 
     return (
-        <div className='flex w-full justify-between items-center h-30 px-10 absolute z-10 text-white'>
+      <div className='flex w-full justify-between items-center h-30 px-10 absolute z-98 text-white'>
       <div>
         <h1 onClick={handleNav} className={logo ? 'hidden' : 'block'}>
 
@@ -27,6 +27,7 @@ const Navbar = () => {
       <ul className='hidden md:flex'>
         <Nav/>
       </ul>
+
       <div className='hidden md:flex'>
       <a style={{display: "table-cell"}} href = "https://app.seam.money" target = "_blank" rel = "noopener noreferrer">
         <button className="seam-button m-3 hidden w-full flex flex-col md:block flex md:w-auto">Launch App</button>
@@ -35,15 +36,9 @@ const Navbar = () => {
 
       <div onClick={handleNav} className='md:hidden z-10'>
         {nav ? <AiOutlineClose className='text-white' size={20} /> : <HiOutlineMenuAlt4 size={20} />}
-
       </div>
 
-
-
-      <div onClick={handleNav} className={nav ? 'absolute text-white left-0 top-0 w-full px-4 py-56 flex flex-col bg-gradient-to-r from-[#000000] via-[#0085CC] to-[#005DA2] w-full overflow-hidden min-h-screen' : 'absolute left-[-100%]'}>
-        {/* // here is where I need to write code to make the background blurry / hide all the back content so I can see the navbar
-
-        // or have a small black box come down half way as background */}
+      <div onClick={handleNav} className={nav ? 'absolute text-white left-0 top-0 w-full px-4 py-36 flex flex-col bg-gradient-to-r from-[#000000] via-[#0085CC] to-[#005DA2] w-full fixed h-[100vh]' : 'absolute left-[-100%]'}>
         <ul>
             <br />
             <br />

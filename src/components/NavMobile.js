@@ -18,7 +18,7 @@ const nav_items = [
 
 const NavMobile = () => {
   return (
-    <div className="w-full md:block md:w-auto items-center" id="mobile-menu">
+    <div className="" id="mobile-menu">
             <ul className="flex flex-col items-center md:flex-row md:space-x-4 md:mt-0 md:text-sm md:font-medium text-2xl">
 
                 {nav_items.map((item, i) => (

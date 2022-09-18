@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Navbar from './components/Navbar';
+import Products from './components/Products';
 import styles from "./styles";
 
 const defiDapps = ["Tsunami","Aries","Laminar","hippo","Econia",]
@@ -41,16 +42,19 @@ function App() {
     });
 
     return (
-        <div className=" bg-gradient-to-r from-[#000000] via-[#0085CC] to-[#005DA2] w-full overflow-hidden min-h-screen">
-            <Navbar />
+        <div className=" bg-gradient-to-r from-[#000000] via-[#0085CC] to-[#005DA2] w-full overflow-hidden">
+        <Navbar />
             <div className={`${styles.flexStart}`}>
                 <div className={`${styles.boxWidth}`}>
                     <Hero />
                 </div>
             </div>
+            <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+                <div className={`${styles.boxWidth}`}>
+            </div>
+            </div>
+            {/* <Products /> */}
         </div>
     );
 }
 export default App;
-
-
