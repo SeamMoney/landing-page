@@ -24,7 +24,7 @@ const Hero = () => {
         <p className={`${styles.paragraph} max-w-[400px] mt-10`}>
         Users can create simple to complex strategies, allowing any combination of perpetuals, AMM LPing, simple borrowing, leverage borrowing, and exotic options on multiple assets across Aptos
         </p>
-        <div className="flex flex-row space-x-4 mt-5">
+        <div className="flex flex-row space-x-4 mt-10">
                             <a href="https://app.seam.money/staking">
                             <button className="seam-button px-4 py-2 rounded-full">Vaults</button>
                             </a>

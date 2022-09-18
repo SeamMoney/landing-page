@@ -60,10 +60,13 @@
   border-radius: 5px;
   color: white;
   border: dashed 3px  #ffffff;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .seam-button-alt{
   background-color: transparent;
+  font-weight: bold;
   margin: 0rem;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -71,6 +74,7 @@
   padding-bottom: 0.3rem;
   border-radius: 5px;
   color: white;
+  font-size: 20px;
 }
 
 .module-container{
