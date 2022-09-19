@@ -11,18 +11,18 @@ const Hero = () => {
         <div className="flex flex-row items-center py-[20px] px-4 bg-discount-gradient rounded-[10px]">
         </div>
 
-        <div className="flex flex-row justify-between items-center w-full">
-          <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[60px]">
+        <div className="flex flex-row justify-between items-center w-full pt-28">
+          <h1 className="flex-1 font-poppins font-semibold text-[42px] text-white ss:leading-[100.8px] leading-[50px]">
             Hyper-Composable<br className="sm:block hidden" />{" "}
             <span className="text-gradient">DeFi Strategy Vaults</span>{" "}
           </h1>
         </div>
 
-        <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100.8px] leading-[60px] w-full">
+        <h1 className="font-poppins font-semibold text-[42px] text-white ss:leading-[100.8px] leading-[50px] w-full">
           on Aptos.
         </h1>
         <p className={`${styles.paragraph} max-w-[400px] mt-10`}>
-        Users can create simple to complex strategies, allowing any combination of perpetuals, AMM LPing, simple borrowing, leverage borrowing, and exotic options on multiple assets across Aptos
+        Create strategies with any combination of AMM LPing, simple borrowing, and exotic options on multiple assets across Aptos
         </p>
         <div className="flex flex-row space-x-4 mt-10">
                             <a href="https://app.seam.money/staking">
@@ -38,7 +38,7 @@ const Hero = () => {
       </div>
 
       <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
-        <img src={HeroImage} alt="billing" className="pt-20 w-[100%] h-[100%] relative z-[99]" />
+        <img src={HeroImage} alt="billing" className="pt-20 w-[100%] h-[100%] relative z-[99] overflow-hidden" />
         
 
         {/* gradient start */}

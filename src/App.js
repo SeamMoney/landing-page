@@ -6,6 +6,7 @@ import 'aos/dist/aos.css';
 import Navbar from './components/Navbar';
 import Products from './components/Products';
 import styles from "./styles";
+import Footer from './components/Footer';
 
 const defiDapps = ["Tsunami","Aries","Laminar","hippo","Econia",]
 
@@ -54,6 +55,7 @@ function App() {
             </div>
             </div>
             {/* <Products /> */}
+            <Footer />
         </div>
     );
 }
