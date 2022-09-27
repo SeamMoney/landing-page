@@ -64,7 +64,7 @@ export interface CollectionType {
   liked?: boolean;
   poster: string;
   title: string;
-  price: number;
+  price: string;
   deadline: string;
   like: number;
   total_bid: number;

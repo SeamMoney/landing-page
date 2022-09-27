@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { CSSProperties, FC } from "react";
-import { RiHeartLine, RiHeartFill, RiTimerLine } from "react-icons/ri";
 import Style from "../../../styles/dark/nft_card/NftCard.module.css";
 const CardMinimal: FC<PropsType> = (props) => {
   const {
@@ -75,7 +74,7 @@ const CardMinimal: FC<PropsType> = (props) => {
 interface PropsType {
   poster: string;
   title: string;
-  price: number;
+  price: string;
   risk: string;
   deadline: string;
   total_bid: number;
