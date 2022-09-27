@@ -1,0 +1,108 @@
+[
+    {
+        "id": 1,
+        "poster" : "https://raw.githubusercontent.com/SeamMoney/seam-frontend/main/public/dapps/vial.png",
+        "title": "3X Power Set",
+        "price": "7.23%",
+        "risk": "Medium",
+        "deadline": "1.14M TVL",
+        "like": 235,
+        "total_bid": 951,
+        "bidders": [
+            {
+                "id":"1",
+                "image": "https://i.ibb.co/R0gRXKN/avatar1.png"
+            },
+            {
+                "id":"2",
+                "image": "https://i.ibb.co/DkdsN1C/avatar2.png"
+            },
+            {
+                "id":"3",
+                "image": "https://i.ibb.co/xDLbjfb/avatar3.png"
+            },
+            {
+                "id":"4",
+                "image": "https://i.ibb.co/VMrDf36/avatar4.png"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "poster" : "https://raw.githubusercontent.com/SeamMoney/seam-frontend/main/public/dapps/vial.png",
+        "title": "3Y Leveraged Power Set",
+        "price": "31.50%",
+        "risk": "High",
+        "deadline": "0.64M TVL",
+        "like": 910,
+        "total_bid": 350,
+        "bidders": [
+            {
+                "id":"2",
+                "image": "https://i.ibb.co/DkdsN1C/avatar2.png"
+            },
+            {
+                "id":"3",
+                "image": "https://i.ibb.co/xDLbjfb/avatar3.png"
+            },
+            {
+                "id":"4",
+                "image": "https://i.ibb.co/VMrDf36/avatar4.png"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "poster" : "https://raw.githubusercontent.com/SeamMoney/seam-frontend/main/public/dapps/vial.png",
+        "title": "Asymmetric Boost Power Set",
+        "price": "10.89%",
+        "risk": "Medium",
+        "deadline": "4.02M TVL",
+        "like": 1500,
+        "total_bid": 1101,
+        "liked": true,
+        "bidders": [
+            {
+                "id":"1",
+                "image": "https://i.ibb.co/R0gRXKN/avatar1.png"
+            },
+            {
+                "id":"2",
+                "image": "https://i.ibb.co/DkdsN1C/avatar2.png"
+            },
+            {
+                "id":"3",
+                "image": "https://i.ibb.co/xDLbjfb/avatar3.png"
+            },
+            {
+                "id":"4",
+                "image": "https://i.ibb.co/VMrDf36/avatar4.png"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "poster" : "https://raw.githubusercontent.com/SeamMoney/seam-frontend/main/public/dapps/vial.png",
+        "title": "5-Tuple Stable Power Set",
+        "price": "3.01%",
+        "risk": "Low",
+        "deadline": "0.93M TVL",
+        "like": 321,
+        "total_bid": 150,
+        "liked": true,
+        "bidders": [
+            {
+                "id":"1",
+                "image": "https://i.ibb.co/R0gRXKN/avatar1.png"
+            },
+            {
+                "id":"2",
+                "image": "https://i.ibb.co/DkdsN1C/avatar2.png"
+            },
+            {
+                "id":"4",
+                "image": "https://i.ibb.co/VMrDf36/avatar4.png"
+            }
+        ]
+    }
+]
