@@ -25,7 +25,9 @@ const Navigation = () => {
       </ul>
       {/* ACTION BUTTONS */}
       <div className={`flex space-16 ${Style.act_button}`}>
-        <Button text="Launch App" type="primary" />
+        <a href="https://app.seam.money/staking">
+          <Button text="Launch App" type="primary" />
+        </a>
       </div>
 
       {/* Mobile nav icon */}
@@ -46,7 +48,9 @@ const Navigation = () => {
             </ul>
           </div>
           <div className={`flex content-center w-2/3 ${Style.btn_group}`}>
-            <Button text="Launch App" type="primary" />
+            <a href="https://app.seam.money/staking">
+              <Button text="Launch App" type="primary" />
+            </a>
           </div>
         </div>
       </div>

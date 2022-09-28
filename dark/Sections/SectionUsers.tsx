@@ -39,8 +39,12 @@ export default function SectionUsers() {
             Use the transaction explorer to create highly customized DeFi strategies, explore risk curves on positions across different protocols, and execute batch transactions
           </span>
           <div className="flex space-36 wrap">
-            <Button text="Explorer" type="primary" />
-            <Button text="Documentation" type="secondary" />
+            <a href="https://app.seam.money/explorer">
+              <Button text="Explorer" type="primary" />
+            </a>
+            <a href="https://docs.seam.money">
+              <Button text="Documentation" type="secondary" />
+            </a>
           </div>
         </div>
 

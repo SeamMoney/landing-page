@@ -5,15 +5,15 @@ const NavLink: FC<PropsType> = ({ className, style }) => {
   const lists: { label: string; url: string }[] = [
     {
       label: "Vaults",
-      url: "#",
+      url: "https://app.seam.money/staking",
     },
     {
       label: "Explorer",
-      url: "#",
+      url: "https://app.seam.money/explorer",
     },
     {
       label: "Staking",
-      url: "#",
+      url: "https://app.seam.money/staking",
     },
   ];
   const render = lists.map((el, index) => (
