@@ -74,7 +74,7 @@ export default function SectionScrollEth() {
   if (!nft) return null;
 
   const lists = nft
-    .slice(1, nft.length - 1)
+    .slice(1, nft.length)
     .map((eth) => <EthCard key={eth.id} {...eth} />);
   return <Slider {...settings}>{lists}</Slider>;
 }

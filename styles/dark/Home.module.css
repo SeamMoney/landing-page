@@ -260,14 +260,14 @@
 @media (min-width: 1024px) {
   .popular_auction {
     -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (min-width: 1400px) {
   .popular_auction {
     -ms-grid-columns: (1fr)[5];
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(3, 1fr);
   }
 }
 /*# sourceMappingURL=Home.module.css.map */
