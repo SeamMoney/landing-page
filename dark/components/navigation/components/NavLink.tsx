@@ -4,8 +4,8 @@ import { CSSProperties, FC } from "react";
 const NavLink: FC<PropsType> = ({ className, style }) => {
   const lists: { label: string; url: string }[] = [
     {
-      label: "Vaults",
-      url: "https://app.seam.money/staking",
+      label: "Powersets",
+      url: "https://app.seam.money/powersets",
     },
     {
       label: "Explorer",
