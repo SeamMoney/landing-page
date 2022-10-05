@@ -25,7 +25,7 @@ const Navigation = () => {
       </ul>
       {/* ACTION BUTTONS */}
       <div className={`flex space-16 ${Style.act_button}`}>
-        <a href="https://app.seam.money/">
+        <a href="https://app.seam.money/" target="_blank" rel="noopener noreferrer">
           <Button text="Launch App" type="primary" />
         </a>
       </div>
@@ -48,7 +48,7 @@ const Navigation = () => {
             </ul>
           </div>
           <div className={`flex content-center w-2/3 ${Style.btn_group}`}>
-            <a href="https://app.seam.money/">
+            <a href="https://app.seam.money/" target="_blank" rel="noopener noreferrer">
               <Button text="Launch App" type="primary" />
             </a>
           </div>
