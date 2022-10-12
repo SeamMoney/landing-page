@@ -55,7 +55,7 @@ export default function SectionPopularAuction() {
         <div className="flex flex-col content-center space-36 text-center">
           <div className="flex content-center flex-col space-16 text-center">
             <span className="overline text-gray-1000">Strategies For All</span>
-            <Title text="Yield Aggregated Powersets" className="h1" />
+            <Title text="Yield Aggregated Power Sets" className="h1" />
           </div>
           <span className="tags flex space-16 content-center py-24 wrap">
             <button className={ButtonStyle.button_small}>Multi-Asset Position</button>

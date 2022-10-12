@@ -1,14 +1,14 @@
 @import "./_variable";
 
-.Button {
-  padding: 16px 24px;
-  font-size: 16px;
-  font-weight: 600;
-  border-radius: 12px;
-  cursor: pointer;
-  white-space: nowrap;
-  transition: all 0.4s linear;
-}
+// .Button {
+//   padding: 16px 24px;
+//   font-size: 16px;
+//   font-weight: 600;
+//   border-radius: 12px;
+//   cursor: pointer;
+//   white-space: nowrap;
+//   transition: all 0.4s linear;
+// }
 
 .Button_primary {
   background: linear-gradient(104.42deg, $purple-500 0%, $purple-1000 60.23%);
@@ -64,7 +64,7 @@
 .button_small {
   padding: 8px;
   color: $gray-white-1000;
-  font-family: "Sora";
+  font-family: "Nunito";
   font-size: 16px;
   font-weight: 600;
   border: 2px solid $gray-white-500;
