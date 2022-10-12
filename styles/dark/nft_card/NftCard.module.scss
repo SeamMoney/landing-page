@@ -1,34 +1,91 @@
 @import "../_variable";
 
+
+@mixin displayCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.cube{
+	position: relative;
+}
+.blur{
+	position: absolute;
+	filter: blur(20px);
+}
+.cube,.blur{
+	width: 100%;
+	max-width: 75vh;
+	height: 500vw;
+	max-height: 50vh;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  overflow: hidden;
+}
+.cube::before,.blur::before{
+	content: "";
+	width: 140%;
+	height: 200%;
+	background: linear-gradient(
+		#5ddcff 34%,
+		transparent 45% 55%,
+		#4e00c2 80%
+	);
+	position: absolute;
+	animation: animate 10s infinite linear;
+}
+.cube::after{
+	content: "";
+	background: #181810;
+	border-radius: 20px;
+	position: absolute;
+	inset: 4px;
+}
+@keyframes animate{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
 .gradient_box {
   
+  justify-content: center;
+  border: 10px solid white;
+  border-image-slice: 1;
+  border-width: 2px;
   display: flex;
   align-items: center;
-  //width: 50vw;
-  width: 90%;
-  height: 550px;
+  width: 100%;
+  height: 500px;
   margin: auto;
-  max-width: 400px;
 
   position: relative;
   padding: 50% 2em;
   box-sizing: border-box;
 
-  $border: 5px;
-  color: #FFFFFF;
-  background: #000;
-  background-clip: padding-box; /* !importanté */
-  border: solid $border transparent; /* !importanté */
+  // background-clip: padding-box; /* !importanté */
   border-radius: 20px;
+
+  // background: linear-gradient(104.42deg, #93DEFF 0%, #8758FF 60.23%);
+  // -webkit-box-shadow: inset -4px -4px 4px rgba(0, 0, 0, 0.1), inset 4px 4px 4px rgba(255, 255, 255, 0.817);
+  //         box-shadow: inset -4px -4px 4px rgba(0, 0, 0, 0.1), inset 4px 4px 4px rgba(255, 255, 255, 0.865);
 
   &:before {
     content: '';
     position: absolute;
     top: 0; right: 0; bottom: 0; left: 0;
     z-index: -1;
-    margin: -$border; /* !importanté */
     border-radius: inherit; /* !importanté */
-    background: linear-gradient(to right, red, orange);
+    // background: linear-gradient(to right, red, orange);
+    // background: linear-gradient(235deg, #e100ff, #060c21, #3700ff);
+    background: linear-gradient(104.42deg, #93DEFF 0%, #8758FF 60.23%);
   }
 }
 
@@ -60,7 +117,7 @@
     display: flex;
     align-items: baseline;
     background: #2a27c91a;
-    color: $purple-1000;
+    color: #8758FF;
     font-size: 12px;
     padding: 6px 8px;
     font-weight: 600;
@@ -72,7 +129,7 @@
     display: flex;
     align-items: baseline;
     background: #2a27c91a;
-    color: $purple-1000;
+    // color: $purple-1000;
     font-size: 12px;
     padding: 6px 8px;
     font-weight: 600;
