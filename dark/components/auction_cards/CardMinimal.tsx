@@ -16,6 +16,7 @@ const CardMinimal: FC<PropsType> = (props) => {
   } = props;
 
   return (
+
     <div
       className={`flex overflow-hidden ${
         renderType === "x" ? "flex-col" : "flex-row space-16 align-center"
@@ -31,26 +32,26 @@ const CardMinimal: FC<PropsType> = (props) => {
       className="flex flex-col overflow-hidden"
       style={{ padding: "20px 0 0 0", width: "100%" }}
       >
-      <span className={`text-heading h7 ${truncateTitle ? "truncate" : ""}`}>
-        {title}
-      </span>
-      <div className="flex space-between" style={{ alignItems: "baseline" }}>
-        <span className={`${Style.timer}`} style={{ lineHeight: 3 }}>
-          {deadline}
+        <span className={`text-heading h7 ${truncateTitle ? "truncate" : ""}`}>
+          {title}
         </span>
-        <span className={`${Style.bidding_price}`}>{price} APY</span>
+        <div className="flex space-between" style={{ alignItems: "baseline" }}>
+          <span className={`${Style.timer}`} style={{ lineHeight: 3 }}>
+            {deadline}
+          </span>
+          <span className={`${Style.bidding_price}`}>{price} APY</span>
+        </div>
+        {renderType === "x" && (
+          <div
+            className="border-dark-500"
+            style={{ height: 1, width: "100%", margin: "10px 0" }}
+          ></div>
+        )}
+        <div className="flex space-24 space-between align-center">
+          <span className={Style.total_bid}>{total_bid} Depositors</span>
+          <span className={`${Style.risk_profile}`}>{risk} Risk</span>
+        </div>
       </div>
-      {renderType === "x" && (
-        <div
-          className="border-dark-500"
-          style={{ height: 1, width: "100%", margin: "10px 0" }}
-        ></div>
-      )}
-      <div className="flex space-24 space-between align-center">
-        <span className={Style.total_bid}>{total_bid} Depositors</span>
-        <span className={`${Style.risk_profile}`}>{risk} Risk</span>
-      </div>
-    </div>
     </div>
     </div>
 

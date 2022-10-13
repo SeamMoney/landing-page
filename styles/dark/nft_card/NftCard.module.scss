@@ -20,31 +20,57 @@
 	max-width: 75vh;
 	height: 500vw;
 	max-height: 50vh;
-	border-radius: 20px;
+	border-radius: 25px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
   overflow: hidden;
 }
+
+
 .cube::before,.blur::before{
-	content: "";
-	width: 140%;
-	height: 200%;
-	background: linear-gradient(
-		#5ddcff 34%,
-		transparent 45% 55%,
-		#4e00c2 80%
-	);
-	position: absolute;
-	animation: animate 10s infinite linear;
+	// content: "";
+	// width: 140%;
+	// height: 200%;
+	// background: linear-gradient(
+	// 	#5ddcff 34%,
+	// 	transparent 45% 55%,
+	// 	#4e00c2 80%
+	// );
+	// position: absolute;
+	// animation: animate 10s infinite linear;
+  content: '';
+  position: absolute;
+  border-radius: 20px;
+  // z-index: -2;
+  left: -50%;
+  top: -50%;
+  width: 200%;
+  height: 200%;
+  background-color: #1a232a;
+  background-image: conic-gradient(transparent, #5a26cc, transparent 80%);
+  animation: rotate 10s linear infinite;
 }
 .cube::after{
-	content: "";
-	background: #181810;
+	// content: "";
+	// background: #181810;
 	border-radius: 20px;
 	position: absolute;
 	inset: 4px;
+  content: '';
+  position: absolute;
+  border-radius: 20px;
+  z-index: 999;
+  left: 6px;
+  top: 6px;
+  width: calc(100% - 12px);
+  height: calc(100% - 12px);
+  background: #181818;
+  border-radius: 20px;
 }
+
+
+
 @keyframes animate{
 	0%{
 		transform: rotate(0deg);
