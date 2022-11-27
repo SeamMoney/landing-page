@@ -19,9 +19,13 @@ const DarkHome: NextPage = () => {
         <meta property="og:url" content="https://seam.money"/>
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Seam Money" />
-        <meta name="twitter:card" content="summary" />
         <meta property="og:description" content="Distributed Yield and Staking Solution on Aptos" />
         <meta property="og:image" content={preview.src} />
+        <meta key="twitter-title" name="twitter:title" content="Seam Money" />
+        <meta key="twitter-description" name="twitter:description" content="Distributed Yield and Staking Solution on Aptos" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@SeamMoney" />
+        <meta name="twitter:image" content={preview.src} />
       </Head>
       <Navigation />
       <Heading />
