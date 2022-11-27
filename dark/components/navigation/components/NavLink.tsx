@@ -9,7 +9,7 @@ const NavLink: FC<PropsType> = ({ className, style }) => {
     },
     {
       label: "Explorer",
-      url: "https://app.seam.money/explorer",
+      url: "https://app.seam.money/explorer/modules/mainnet/0x1",
     },
     {
       label: "Staking",
