@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Heading from "../dark/components/heading/Heading";
+import Footer from "../dark/components/footer/Footer";
 import Navigation from "../dark/components/navigation/Nav";
 import SectionPopularAuction from "../dark/Sections/SectionPopularAuction";
 import SectionScrollEth from "../dark/Sections/SectionScrollEth";
@@ -36,6 +37,7 @@ const DarkHome: NextPage = () => {
       </div>
       <SectionScrollEth />
       <div className="container">
+      <Footer />
       </div>
     </div>
   );

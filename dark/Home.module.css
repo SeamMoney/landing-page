@@ -10,7 +10,7 @@
       grid-template-columns: repeat(3, 1fr);
   row-gap: 2.2rem;
   border: 1px solid #F2F2F2;
-  border-radius: 18px;
+  /* border-radius: 18px; */
 }
 
 .footer .footer_box {
