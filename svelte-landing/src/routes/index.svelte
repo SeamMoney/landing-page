@@ -39,11 +39,11 @@
 	});
 
 	const clientsList = [
-		['Airbnb'],
-		['Google', 'BookMyShow'],
-		['Microsoft', 'FedEx', 'Walmart'],
-		['OYO', 'OLA'],
-		['Amazon']
+		[{name: 'Laminar', logo: ''}],
+		[{name: 'Econia', logo: ''}, {name: 'Aries', logo: ''}],
+		[{name: 'Tsunami', logo: ''}, {name: 'Vial', logo: ''}, {name: 'Thala', logo: ''}],
+		[{name: 'Argo', logo: ''}, {name: 'OLA', logo: ''}],
+		[{name: 'Amazon', logo: ''}]
 	]
 
 	function scrollToTop() {
@@ -108,7 +108,7 @@
 			<div class="flex flex-col space-y-6">
 				{#each clients as client}
 					<div class="client-card">
-						<img src={`/images/clients/${client} Logo.svg`} alt={client} />
+						<img src={client.logo} alt={client.name} />
 					</div>
 				{/each}
 			</div>
