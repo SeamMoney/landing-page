@@ -109,27 +109,27 @@
 			<img
 				src="/static/images/clients/argologo.svg"
 				class="transform transition duration-300 hover:scale-125 cursor-pointer"
-				alt="Apple Watch"
+				alt="Argo"
 			/>
 			<img
 				src="/static/images/clients/ditto.svg"
 				class="transform transition duration-300 hover:scale-125 cursor-pointer"
-				alt="Android TV"
+				alt="Ditto"
 			/>
 			<img
 				src="/static/images/clients/hippo.png"
 				class="transform transition duration-300 hover:scale-125 cursor-pointer h-16"
-				alt="Android"
+				alt="Hippo"
 			/>
 			<img
 				src="/static/images/clients/tsunami.svg"
 				class="transform transition duration-300 hover:scale-125 cursor-pointer h-20"
-				alt="Apple TV"
+				alt="Tsunami"
 			/>
 			<img
 				src="/static/images/clients/kana.svg"
 				class="transform transition duration-300 hover:scale-125 cursor-pointer"
-				alt="iPhone"
+				alt="Kana"
 			/>
 			
 		</div>

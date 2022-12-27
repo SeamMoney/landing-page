@@ -364,7 +364,7 @@
         <img
           class="card__back"
           src="/static/images/Component 2.svg"
-          alt="The back of a Pokemon Card, a Pokeball in the center with Pokemon logo above and below"
+          alt="Seam Pool"
           loading="lazy"
           width="660"
           height="921"
