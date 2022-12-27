@@ -8,7 +8,7 @@
     import Glare from "../components/Glare.svelte";
     import Shine from "../components/Shine.svelte";
   
-    export let img = "/static/images/Component 2.svg";
+    export let img = "/images/Component 2.svg";
   
     export let name = "";
     export let number = "0";

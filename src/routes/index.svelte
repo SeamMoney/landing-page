@@ -38,13 +38,13 @@
 		isLoading = false;
 	});
 
-	const clientsList = [
-		[{name: 'Laminar', logo: '/static/images/clients/abel.png'}],
-		[{name: 'Econia', logo: '/static/images/clients/aptin.png'}, {name: 'Aries', logo: '/static/images/clients/AUX.svg'}],
-		[{name: 'PancakeSwap', logo: '/static/images/clients/AUX.svg'}, {name: 'Cetus', logo: '/static/images/clients/'}, {name: 'Argo', logo: '/static/images/clients/tsunami.svg'}],
-		[{name: 'AptoSwap', logo: '/static/images/clients/hippo.png'}, {name: 'Leizd', logo: '/static/images/clients/leizd-protocol.png'}],
-		[{name: 'Tortuga', logo: '/static/images/clients/tortuga-finance.png'}]
-	]
+	// const clientsList = [
+	// 	[{name: 'Laminar', logo: '/images/clients/abel.png'}],
+	// 	[{name: 'Econia', logo: '/images/clients/aptin.png'}, {name: 'Aries', logo: '/images/clients/AUX.svg'}],
+	// 	[{name: 'PancakeSwap', logo: '/images/clients/AUX.svg'}, {name: 'Cetus', logo: '/images/clients/'}, {name: 'Argo', logo: '/images/clients/tsunami.svg'}],
+	// 	[{name: 'AptoSwap', logo: '/images/clients/hippo.png'}, {name: 'Leizd', logo: '/images/clients/leizd-protocol.png'}],
+	// 	[{name: 'Tortuga', logo: '/images/clients/tortuga-finance.png'}]
+	// ]
 
 	function scrollToTop() {
 		document.body.scrollTop = 0
@@ -107,27 +107,27 @@
 		<div class="flex justify-between mt-32 space-x-24">
 			
 			<img
-				src="/static/images/clients/argologo.svg"
+				src="/images/argologo.svg"
 				class="transform transition duration-300 hover:scale-125 cursor-pointer"
 				alt="Argo"
 			/>
 			<img
-				src="/static/images/clients/ditto.svg"
+				src="/images/ditto.svg"
 				class="transform transition duration-300 hover:scale-125 cursor-pointer"
 				alt="Ditto"
 			/>
 			<img
-				src="/static/images/clients/hippo.png"
+				src="/images/hippo.png"
 				class="transform transition duration-300 hover:scale-125 cursor-pointer h-16"
 				alt="Hippo"
 			/>
 			<img
-				src="/static/images/clients/tsunami.svg"
+				src="/images/tsunami.svg"
 				class="transform transition duration-300 hover:scale-125 cursor-pointer h-20"
 				alt="Tsunami"
 			/>
 			<img
-				src="/static/images/clients/kana.svg"
+				src="/images/kana.svg"
 				class="transform transition duration-300 hover:scale-125 cursor-pointer"
 				alt="Kana"
 			/>
@@ -171,7 +171,7 @@
 			<div
 				class="w-[480px] h-[280px] flex items-center justify-center absolute"
 			>
-				<img src="/static/images/function.png" class="border border-[3px] border-dashed rounded-2xl transform transition duration-300 hover:scale-110 cursor-pointer" width={900} height={900} alt="Function" />
+				<img src="/images/function.png" class="border border-[3px] border-dashed rounded-2xl transform transition duration-300 hover:scale-110 cursor-pointer" width={900} height={900} alt="Function" />
 			</div>
 			<div />
 			<div class="flex flex-col items-center w-3/6 mt-10 space-y-7 z-[2]">
@@ -195,7 +195,7 @@
 			</a>
 		</div>
 		<div class="relative flex justify-end w-[900px]">
-			<img src="/static/images/pool.png" class="border border-[3px] border-dashed rounded-2xl transform transition duration-300 hover:scale-110 cursor-pointer" alt="Transaction Executor" />
+			<img src="/images/pool.png" class="border border-[3px] border-dashed rounded-2xl transform transition duration-300 hover:scale-110 cursor-pointer" alt="Transaction Executor" />
 		</div>
 	</div>
 	<!-- <div class="mt-48 h-0"> -->
