@@ -8,7 +8,7 @@
     import Glare from "../components/Glare.svelte";
     import Shine from "../components/Shine.svelte";
   
-    export let img = "/images/Component 2.svg";
+    export let img = "/images/Component2.svg";
   
     export let name = "";
     export let number = "0";
@@ -19,12 +19,12 @@
     export let showcase = false;
   
     const back_loading =
-      "";
+      "/images/Component2.svg";
     const front_loading =
-      "";
+      "/images/Component2.svg";
   
     let img_base = img.startsWith("http") ? "" : "";
-    let front_img = "";
+    let front_img = "/images/Component2.svg";
   
     const galaxyPosition = Math.floor(Math.random()*1500);
   
@@ -363,7 +363,7 @@
       >
         <img
           class="card__back"
-          src="/static/images/Component 2.svg"
+          src="/images/Component2.svg"
           alt="Seam Pool"
           loading="lazy"
           width="660"
@@ -371,7 +371,7 @@
         />
         <div class="card__front">
           <img
-            src="/static/images/Component 2.svg"
+            src="/images/Component2.svg"
             alt="Seam product showcase"
             on:load={imageLoader}
             loading="lazy"
