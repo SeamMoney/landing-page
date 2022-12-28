@@ -67,9 +67,9 @@
 </script>
 
 <!-- Hero section -->
-<section class="dope-background py-48 mt-32">
-	<div class="flex justify-between mx-auto space-x-40 max-w-7xl">
-		<div class="flex flex-col w-1/2">
+<section class="dope-background p-6 mt-48">
+	<div class="md:flex sm:block justify-between mx-auto max-w-7xl">
+		<div class="flex flex-col md:w-1/2 sm:w-full">
 			<h1 class="text-5xl font-bold leading-[64px]">
 				<span class="character-gradient">Composable</span> DeFi Products on Aptos
 			</h1>
@@ -77,7 +77,7 @@
 				<button class="seam-button mt-8 w-fit text-lg">Launch App</button>
 			</a>
 		</div>
-		<div class="relative flex items-center justify-center w-96 z-[99]">
+		<div class="relative flex items-center justify-center md:w-96 xss:w-full z-[99] md:mt-0 sm:mt-20 xss:mt-20">
 			<div class="showcase">
 				{#if isLoading}
 					loading...
@@ -98,14 +98,13 @@
 </section>
 
 <!-- Our clients section -->
-<section class="py-20">
-	<div class="max-w-screen-xl mx-auto">
+<section class="lg:py-20 xss:py-6">
+	<div class="max-w-screen-xl mx-auto px-6">
 		<div class="flex flex-col items-center">
-			<h1 class="text-4xl font-extrabold">Supported Protocols</h1>
-			<p class="mt-2 font-light">We can easily add your favorite protocol, pool, or dapp</p>
+			<h1 class="text-4xl font-extrabold text-center">Supported Protocols</h1>
+			<p class="mt-2 font-light text-center">We can easily add your favorite protocol, pool, or dapp</p>
 		</div>
-		<div class="flex justify-between mt-32 space-x-24">
-			
+		<div class="grid grid-cols-1 xl:grid-cols-5 md:grid-cols-3 items-center justify-between mt-32 gap-10">
 			<img
 				src="/images/argologo.svg"
 				class="transform transition duration-300 hover:scale-125 cursor-pointer"
@@ -131,7 +130,6 @@
 				class="transform transition duration-300 hover:scale-125 cursor-pointer"
 				alt="Kana"
 			/>
-			
 		</div>
 	</div>
 	<!-- <div class="flex items-center justify-center mt-20 space-x-6">
@@ -147,9 +145,9 @@
 	</div> -->
 </section>
 
-<section class="py-40">
-	<div class="flex justify-between mx-auto py-3 max-w-7xl">
-		<div class="relative">
+<section class="lg:py-40 xss:py-6">
+	<div class="block md:flex justify-between mx-auto py-3 max-w-7xl">
+		<div class="relative px-6">
 			<img src="/images/dapp-explorer.png" class="shadow rounded-2xl max-w-full h-auto align-middle" alt="Dapp Explorer" />
 		</div>
 		<div class="flex flex-col mx-10 space-y-10 z-[2]">
@@ -165,26 +163,21 @@
 	</div>
 </section>
 
-<section class="relative py-20">
-	<div class="mx-auto max-w-7xl">
-		<div class="relative flex justify-between">
-			<div
-				class="w-[480px] h-[280px] flex items-center justify-center absolute"
-			>
-				<img src="/images/function.png" class="border border-[3px] border-dashed rounded-2xl transform transition duration-300 hover:scale-110 cursor-pointer" width={900} height={900} alt="Function" />
-			</div>
-			<div />
-			<div class="flex flex-col items-center w-3/6 mt-10 space-y-7 z-[2]">
-				<h1 class="text-4xl font-bold leading-[64px] text-right">
-					Examine <span class="character-gradient">Move modules</span> and build your dream DeFi position
-				</h1>
-			</div>
+<section class="lg:py-40 xss:py-6">
+	<div class="block md:flex justify-between mx-auto py-3 max-w-7xl">
+		<div class="relative px-6">
+			<img src="/images/function.png" class="border border-[3px] border-dashed rounded-2xl transform transition duration-300 hover:scale-110 cursor-pointer" width={900} height={900} alt="Function" />
+		</div>
+		<div class="flex flex-col mx-10 space-y-10 z-[2]">
+			<h1 class="text-4xl font-bold leading-[64px] text-right">
+				Examine <span class="character-gradient">Move modules</span> and build your dream DeFi position
+			</h1>
 		</div>
 	</div>
 </section>
 
-<section class="dope-background2 py-40 mt-20">
-	<div class="flex justify-between mx-auto space-x-24 max-w-7xl">
+<section class="dope-background2 lg:py-40 xss:py-6 px-6 mt-20">
+	<div class="block lg:flex justify-between mx-auto max-w-7xl">
 		<div class="flex flex-col space-y-10 w-1/2 z-[2]">
 			<h1 class="text-4xl font-bold leading-[64px]">Learn how our strategy pools are <span class="character-gradient">structured</span></h1>
 			<p class="leading-9">
@@ -194,7 +187,7 @@
 			<button class="seam-button w-fit py-[18px] px-9">Documentation</button>
 			</a>
 		</div>
-		<div class="relative flex justify-end w-[900px]">
+		<div class="relative flex justify-end max-w-[900px] lg:mt-0 xss:mt-10">
 			<img src="/images/pool.png" class="border border-[3px] border-dashed rounded-2xl transform transition duration-300 hover:scale-110 cursor-pointer" alt="Transaction Executor" />
 		</div>
 	</div>

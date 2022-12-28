@@ -5,24 +5,45 @@
 		{name: 'Twitter', link: 'https://twitter.com/SeamMoney'}, 
 		{name: 'Docs', link: 'https://docs.seam.money/'},
 		{name: 'Blog', link: 'https://paragraph.xyz/@seam'}
-		]
-</script>
+	]
+	let showMenu = false;
 
-<nav class="fixed top-0 z-[9999] w-full py-6 backdrop-blur-md">
-	<div class="flex justify-between mx-auto max-w-7xl">
-		<a href={"/"}>
-		<div class="flex items-center">
-			<img src="/images/logo.png" width={80} alt="Seam Logo" />
-			<h1 class="text-6xl leading-[84px]">
-				<span class="font-semibold">SΣ<span class="font-semibold text-[76px]">∀</span>M</span>
-			</h1>
-		</div>
+	function toggleNavbar() {
+		showMenu = !showMenu;
+	}
+</script>
+<nav
+	class="container fixed top-0 z-[9999] max-w-full px-6 py-8 mx-auto md:flex md:justify-between md:items-center backdrop-blur-md"
+>
+	<div class="flex items-center justify-between">
+		<a href={"/"} >
+			<div class="flex items-center">
+				<img src="/images/logo.png" width={80} alt="Seam Logo" class="sm:w-[80px] xss:w-[50px]" />
+				<h1 class="sm:text-6xl xss:text-2xl sm:leading-[84px] xss:leading-[44px]">
+					<span class="font-semibold">SΣ<span class="font-semibold sm:text-[76px] xss:text-[32px]">∀</span>M</span>
+				</h1>
+			</div>
 		</a>
-		<div class="flex items-center space-x-12">
-			{#each menus as menu}
-				<a href={menu.link} class="nav-link">{menu.name}</a>
-			{/each}
+		<div on:click={toggleNavbar} class="flex md:hidden">
+			<button
+			type="button"
+			class="text-slate-50 hover:text-slate-200 focus:outline-none focus:text-slate-200"
+			>
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+					<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+				</svg>
+			</button>
 		</div>
+	</div>
+
+	<div
+		class="flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0 {showMenu
+			? 'flex'
+			: 'hidden'}"
+	>
+		{#each menus as menu}
+			<a href={menu.link} class="nav-link">{menu.name}</a>
+		{/each}
 	</div>
 </nav>
 
