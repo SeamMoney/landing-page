@@ -1,3 +1,4 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
 	content: ['./src/**/*.{html,svelte,js,ts}'],
 	theme: {
@@ -11,7 +12,13 @@ module.exports = {
 			fontFamily: {
 				sans: ['Inter', 'sans-serif']
 			}
-		}
+		},
+		screens: {
+			'xss': '320px',
+			'xsm': '375px',
+			'xsl': '425px',
+			...defaultTheme.screens,
+		},
 	},
 	plugins: []
 }
