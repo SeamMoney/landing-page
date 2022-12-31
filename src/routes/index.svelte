@@ -67,7 +67,8 @@
 </script>
 
 <!-- Hero section -->
-<section class="dope-background p-6 mt-48">
+
+<section class="dope-background py-48 sm:mt-32 px-4 sm:px-10">
 	<div class="md:flex sm:block justify-between mx-auto max-w-7xl">
 		<div class="flex flex-col md:w-1/2 sm:w-full">
 			<h1 class="text-5xl font-bold leading-[64px]">
@@ -98,7 +99,8 @@
 </section>
 
 <!-- Our clients section -->
-<section class="lg:py-20 xss:py-6">
+<!-- <section class="lg:py-20 xss:py-6"> -->
+<section class="py-20">
 	<div class="max-w-screen-xl mx-auto px-6">
 		<div class="flex flex-col items-center">
 			<h1 class="text-4xl font-extrabold text-center">Supported Protocols</h1>
@@ -239,12 +241,25 @@
   		background-color: #ffffff;
   		color: black;
 	}
+	.dope-background2 {
+		width: 100%;
+		background-image: 
+		url("/static/images/background2.svg");
+	}
 	.dope-background {
+		width: 100%;
 		background-image: 
 		url("/static/images/background.svg");
 	}
-	.dope-background2 {
-		background-image: 
-		url("/static/images/background2.svg");
+	@media screen and (min-width: 10px) and (max-width: 480px) {
+		.dope-background {
+			background-image: 
+			url("/static/images/background_scaled.svg");
+			background-repeat: no-repeat;
+		}
+		.dope-background2 {
+			background-image: url("/static/images/dope-background3_scaled.svg");
+			background-repeat: no-repeat;
+		}
 	}
 </style>

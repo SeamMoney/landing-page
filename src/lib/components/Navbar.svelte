@@ -22,14 +22,14 @@
 			<div class="flex items-center justify-between">
 				<a href={"/"} >
 					<div class="flex items-center">
-						<img src="{mousePosY < 50 ? '/images/logo.png' : '/images/logo-dark.png'}" width={80} alt="Seam Logo"  />
-						<h1 class="text-3xl sm:leading-[84px] xss:leading-[44px] relative top-[11px]">
-							<span class="font-semibold">SΣ<span class="font-semibold text-[42px]">∀</span>M</span>
+						<img class="w-[60px] sm:w-[80px]" src="/images/logo.png" alt="Seam Logo"  />
+						<h1 class="text-3xl sm:text-5xl sm:leading-[84px] xss:leading-[44px] relative">
+							<span class="font-semibold">SΣ<span class="font-semibold text-[38px] sm:text-[61px]">∀</span>M</span>
 						</h1>
 					</div>
 				</a>
 				<div on:click={toggleNavbar} class="flex md:hidden">
-					<button class="mobile-nav-button {showMenu ? 'toggled' : ''} {mousePosY < 50 ? 'text-white' : 'text-black'}" aria-label="Toggle navigation "></button>
+					<button class="mobile-nav-button {showMenu ? 'toggled' : ''} {'text-white'}" aria-label="Toggle navigation "></button>
 					<!-- <button
 					type="button"
 					class="text-slate-50 hover:text-slate-200 focus:outline-none focus:text-slate-200 z-[100]"
@@ -45,6 +45,8 @@
 				{#each menus as menu}
 					<a href={menu.link} class="nav-link-mobile">{menu.name}</a>
 				{/each}
+				<br/>
+				<button class="seam-button mt-8 w-fit text-lg">Launch App</button>
 			</div>
 
 			<div
@@ -105,9 +107,9 @@
 	}
 	.navbar.scrolled-to-top{
 		border-color:transparent;
-		--tw-backdrop-blur: blur(0);
+		/* --tw-backdrop-blur: blur(16px);
 		-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-		backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)
+		backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia) */
 	}
 	@media (min-width: 768px){
 		.navbar.scrolled-to-top{
@@ -127,7 +129,7 @@
 		right:0px;
 		bottom:0px;
 		left:0px;
-		height:100vh;
+		height:105vh;
 		width:100vw;
 		--tw-translate-y: -100%;
 		transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -135,12 +137,12 @@
 		align-items:center;
 		justify-content:center;
 		gap:1rem;
-		background-color:#000c;
+		background-color:rgba(0, 0, 0, 0.95);
 		padding-top:5rem;
 		padding-bottom:5rem;
 		--tw-text-opacity: 1;
 		color:rgb(255 255 255 / var(--tw-text-opacity));
-		--tw-backdrop-blur:blur(12px);
+		--tw-backdrop-blur:blur(16px);
 		-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 		backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 		transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;
@@ -155,12 +157,13 @@
 	}
 	
 	.nav-link-mobile{
+		@apply relative font-bold transition hover:text-info;
 		display:block;
 		width:100%;
 		padding:.5rem 2rem;
 		font-size:1.5rem;
 		line-height:2rem;
-		font-weight:500
+		text-align: center;
 	}
 
 	.mobile-nav-button{
@@ -206,6 +209,20 @@
 		--tw-translate-y: 0px;
 		--tw-rotate: -45deg;
 		transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+	}
+	.seam-button{
+		background-color: transparent;
+		padding-right: 4rem;
+		padding-left: 4rem;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		border-radius: 8px;
+		color: white;
+		border: dashed 3px  #ffffff;
+	}
+	.seam-button:hover{
+  		background-color: #ffffff;
+  		color: black;
 	}
 </style>
 
