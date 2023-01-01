@@ -68,7 +68,7 @@
 
 <!-- Hero section -->
 
-<section class="dope-background py-48 sm:mt-32 px-4 sm:px-10">
+<section class="dope-background py-40 sm:mt-32 px-6 sm:px-10">
 	<div class="md:flex sm:block justify-between mx-auto max-w-7xl">
 		<div class="flex flex-col md:w-1/2 sm:w-full">
 			<h1 class="text-5xl font-bold leading-[64px]">
@@ -106,30 +106,30 @@
 			<h1 class="text-4xl font-extrabold text-center">Supported Protocols</h1>
 			<p class="mt-2 font-light text-center">We can easily add your favorite protocol, pool, or dapp</p>
 		</div>
-		<div class="grid grid-cols-1 xl:grid-cols-5 md:grid-cols-3 items-center justify-between mt-32 gap-10">
-			<img
-				src="/images/argologo.svg"
-				class="transform transition duration-300 hover:scale-125 cursor-pointer"
-				alt="Argo"
-			/>
-			<img
-				src="/images/ditto.svg"
-				class="transform transition duration-300 hover:scale-125 cursor-pointer"
-				alt="Ditto"
-			/>
-			<img
-				src="/images/hippo.png"
-				class="transform transition duration-300 hover:scale-125 cursor-pointer h-16"
-				alt="Hippo"
-			/>
+		<div class="grid grid-cols-1 xl:grid-cols-5 md:grid-cols-3 items-center justify-between mt-20 gap-10 px-8 sm:px-8 justify-center">
 			<img
 				src="/images/tsunami.svg"
-				class="transform transition duration-300 hover:scale-125 cursor-pointer h-20"
+				class="transform transition duration-300 hover:scale-125 cursor-pointer h-40 -mb-10 sm:mb-0"
 				alt="Tsunami"
 			/>
 			<img
+				src="/images/ditto.svg"
+				class="transform transition duration-300 hover:scale-125 cursor-pointer h-9 pl-10"
+				alt="Ditto"
+			/>
+			<img
+				src="/images/argologo.svg"
+				class="transform transition duration-300 hover:scale-125 cursor-pointer h-16 pl-10"
+				alt="Argo"
+			/>
+			<img
+				src="/images/hippo.png"
+				class="transform transition duration-300 hover:scale-125 cursor-pointer h-16 pl-10"
+				alt="Hippo"
+			/>
+			<img
 				src="/images/kana.svg"
-				class="transform transition duration-300 hover:scale-125 cursor-pointer"
+				class="transform transition duration-300 hover:scale-125 cursor-pointer pl-10"
 				alt="Kana"
 			/>
 		</div>
