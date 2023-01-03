@@ -109,27 +109,27 @@
 		<div class="grid grid-cols-1 xl:grid-cols-5 md:grid-cols-3 items-center justify-between mt-20 gap-10 px-8 sm:px-8 justify-center">
 			<img
 				src="/images/tsunami.svg"
-				class="transform transition duration-300 hover:scale-125 cursor-pointer h-40 -mb-10 sm:mb-0"
+				class="transform transition duration-300 hover:scale-125 cursor-pointer h-20 sm:h-28 sm:mb-10 mt-10 sm:pl-0 pl-10"
 				alt="Tsunami"
 			/>
 			<img
 				src="/images/ditto.svg"
-				class="transform transition duration-300 hover:scale-125 cursor-pointer h-9 pl-10"
+				class="transform transition duration-300 hover:scale-125 cursor-pointer h-11 sm:pl-0 pl-10"
 				alt="Ditto"
 			/>
 			<img
 				src="/images/argologo.svg"
-				class="transform transition duration-300 hover:scale-125 cursor-pointer h-16 pl-10"
+				class="transform transition duration-300 hover:scale-125 cursor-pointer h-16 sm:pl-0 pl-20"
 				alt="Argo"
 			/>
 			<img
 				src="/images/hippo.png"
-				class="transform transition duration-300 hover:scale-125 cursor-pointer h-16 pl-10"
+				class="transform transition duration-300 hover:scale-125 cursor-pointer h-16 sm:pl-0 pl-16"
 				alt="Hippo"
 			/>
 			<img
 				src="/images/kana.svg"
-				class="transform transition duration-300 hover:scale-125 cursor-pointer pl-10"
+				class="transform transition duration-300 hover:scale-125 cursor-pointer sm:pl-0 pl-16"
 				alt="Kana"
 			/>
 		</div>
@@ -147,41 +147,43 @@
 	</div> -->
 </section>
 
-<section class="lg:py-40 xss:py-6">
-	<div class="block md:flex justify-between mx-auto py-3 max-w-7xl">
-		<div class="relative px-6">
+<section class="lg:py-40 xss:py-6 sm:mb-0 mb-36 mt-20 sm:mt-0">
+	<div class="block md:flex justify-between mx-auto py-3 max-w-8xl sm:px-44 px-0">
+		<div class="relative sm:px-0 px-6">
 			<img src="/images/dapp-explorer.png" class="shadow rounded-2xl max-w-full h-auto align-middle" alt="Dapp Explorer" />
 		</div>
-		<div class="flex flex-col mx-10 space-y-10 z-[2]">
-			<h1 class="text-4xl font-bold leading-[54px]">Discover dapps on Aptos through the Seam <span class="character-gradient">Explorer</span></h1>
+		<div class="flex flex-col mx-10 space-y-10 z-[2] text-right">
+			<h1 class="sm:mt-0 mt-10 text-4xl font-bold leading-[54px]">Discover dapps on Aptos through the <span class="character-gradient">Seam Explorer</span></h1>
 			<p class="leading-9">
-				We believe the world is more beautiful as each person gets better. We believe the world is
-				more beautiful as each person gets better. Person gets better.
+				Manage all your DeFi positions from one central dashboard. Evaluate aggregate risk, open & close positions across dapps, and track net performance.
 			</p>
-			<a href="https://app.seam.money/explorer">
-			<button class="seam-button w-fit py-[18px] px-9">Try It Now</button>
+			<a href="https://app.seam.money/explorer/dapps/home">
+			<button class="seam-button w-fit py-[18px] px-9">View Dapps</button>
 			</a>
 		</div>
 	</div>
 </section>
 
-<section class="lg:py-40 xss:py-6">
-	<div class="block md:flex justify-between mx-auto py-3 max-w-7xl">
-		<div class="relative px-6">
-			<img src="/images/function.png" class="border border-[3px] border-dashed rounded-2xl transform transition duration-300 hover:scale-110 cursor-pointer" width={900} height={900} alt="Function" />
+<section class="xss:py-6 sm:py-20 py-40 pt-96">
+	<div class="block md:flex justify-between mx-auto py-3 max-w-7xl sm:pt-10 -mt-38">
+		<div class="relative sm:px-0 px-6">
+			<img src="/images/function.png" class="border border-[3px] border-dashed rounded-2xl transform transition duration-300 hover:scale-110 cursor-pointer" width={970} height={920} alt="Function" />
 		</div>
-		<div class="flex flex-col mx-10 space-y-10 z-[2]">
-			<h1 class="text-4xl font-bold leading-[64px] text-right">
+		<div class="flex flex-col mx-10 space-y-10 z-[2] text-right">
+			<h1 class="sm:mt-0 mt-10 text-4xl font-bold leading-[54px]">
 				Examine <span class="character-gradient">Move modules</span> and build your dream DeFi position
 			</h1>
+			<a href="https://app.seam.money/explorer/modules/mainnet/0x1">
+				<button class="relative seam-button w-fit py-[18px] px-9 ml-30">Try It Now</button>
+			</a>
 		</div>
 	</div>
 </section>
 
-<section class="dope-background2 lg:py-40 xss:py-6 px-6 mt-20">
-	<div class="block lg:flex justify-between mx-auto max-w-7xl">
-		<div class="flex flex-col space-y-10 w-1/2 z-[2]">
-			<h1 class="text-4xl font-bold leading-[64px]">Learn how our strategy pools are <span class="character-gradient">structured</span></h1>
+<section class="dope-background2 lg:py-40 xss:py-6 px-6 mt-18 sm:mt-18">
+	<div class="block lg:flex justify-between mx-auto max-w-7xl sm:mt-20 mt-32">
+		<div class="flex flex-col space-y-10 sm:w-1/2">
+			<h1 class="text-4xl font-bold leading-[54px]">Learn how our strategy pools are <span class="character-gradient">structured</span></h1>
 			<p class="leading-9">
 				We believe the future of DeFi is composability across pools, protocols, and chains. With Seam Money you can permissionlessly create custom vaults to hedge all your DeFi positions in one place.
 			</p>
@@ -189,7 +191,7 @@
 			<button class="seam-button w-fit py-[18px] px-9">Documentation</button>
 			</a>
 		</div>
-		<div class="relative flex justify-end max-w-[900px] lg:mt-0 xss:mt-10">
+		<div class="relative flex justify-end max-w-[900px] p-0 sm:p-10 lg:mt-0 xss:mt-10">
 			<img src="/images/pool.png" class="border border-[3px] border-dashed rounded-2xl transform transition duration-300 hover:scale-110 cursor-pointer" alt="Transaction Executor" />
 		</div>
 	</div>
