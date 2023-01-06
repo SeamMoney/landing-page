@@ -68,8 +68,8 @@
 
 <!-- Hero section -->
 
-<section class="dope-background py-40 sm:mt-32 px-6 sm:px-10">
-	<div class="md:flex sm:block justify-between mx-auto max-w-7xl">
+<section class="dope-background py-40 sm:mt-20 px-6 sm:px-10">
+	<div class="md:flex sm:block justify-between mx-auto max-w-7xl mt-20">
 		<div class="flex flex-col md:w-1/2 sm:w-full">
 			<h1 class="text-5xl font-bold leading-[64px]">
 				<span class="character-gradient">Composable</span> DeFi Products on Aptos
@@ -95,6 +95,10 @@
 				{/if}
 			</div>
 		</div>
+	</div>
+	<div class="flex justify-center mt-28">
+		<span class="text-slate-400 font-bold text-sm tracking-wide">POWERED BY&nbsp</span>
+		<img src="/images/aptos-labs.svg" class="mt-[3px] h-[13px]" alt="Aptos Labs"/>
 	</div>
 </section>
 
