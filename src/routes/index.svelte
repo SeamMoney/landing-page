@@ -109,27 +109,27 @@
 		<div class="grid grid-cols-1 xl:grid-cols-5 md:grid-cols-3 items-center justify-between mt-20 gap-10 px-8 sm:px-8 justify-center">
 			<img
 				src="/images/tsunami.svg"
-				class="transform transition duration-300 hover:scale-125 cursor-pointer h-20 sm:h-28 sm:mb-10 mt-10 sm:pl-0 pl-10"
+				class="transform transition duration-300 hover:scale-125 cursor-pointer h-20 sm:h-28 sm:mb-10 mt-10 sm:pl-0 pl-3"
 				alt="Tsunami"
 			/>
 			<img
 				src="/images/ditto.svg"
-				class="transform transition duration-300 hover:scale-125 cursor-pointer h-11 sm:pl-0 pl-10"
+				class="transform transition duration-300 hover:scale-125 cursor-pointer h-11 sm:pl-0 pl-4"
 				alt="Ditto"
 			/>
 			<img
 				src="/images/argologo.svg"
-				class="transform transition duration-300 hover:scale-125 cursor-pointer h-16 sm:pl-0 pl-20"
+				class="transform transition duration-300 hover:scale-125 cursor-pointer h-16 sm:pl-0 pl-12"
 				alt="Argo"
 			/>
 			<img
 				src="/images/hippo.png"
-				class="transform transition duration-300 hover:scale-125 cursor-pointer h-16 sm:pl-0 pl-16"
+				class="transform transition duration-300 hover:scale-125 cursor-pointer h-16 sm:pl-0 pl-10"
 				alt="Hippo"
 			/>
 			<img
 				src="/images/kana.svg"
-				class="transform transition duration-300 hover:scale-125 cursor-pointer sm:pl-0 pl-16"
+				class="transform transition duration-300 hover:scale-125 cursor-pointer sm:pl-0 pl-8"
 				alt="Kana"
 			/>
 		</div>
@@ -147,24 +147,100 @@
 	</div> -->
 </section>
 
-<section class="lg:py-40 xss:py-6 sm:mb-0 mb-36 mt-20 sm:mt-0">
-	<div class="block md:flex justify-between mx-auto py-3 max-w-8xl sm:px-44 px-0">
-		<div class="relative sm:px-0 px-6">
-			<img src="/images/dapp-explorer.png" class="shadow rounded-2xl max-w-full h-auto align-middle" alt="Dapp Explorer" />
+<section class="lg:py-40 xss:py-6 sm:mb-20 mb-48 mt-20 sm:mt-0">
+	<div class="flex flex-col mx-10 space-y-10 z-[2] text-center">
+		<!-- <p class="leading-9 px-40">
+			Manage all your DeFi positions from one central dashboard. Evaluate aggregate risk, open & close positions across dapps, and track net performance.
+		</p> -->
+		<!-- <a href="https://app.seam.money/explorer/dapps/home">
+		<button class="seam-button w-fit py-[18px] px-9">View Dapps</button>
+		</a> -->
+
+		<h1 class="sm:mt-0 mt-10 text-4xl font-bold leading-[54px]">Discover dapps on Aptos through the <span class="character-gradient">Seam Explorer</span></h1>
+
+		<div class="block flex-col md:flex justify-between py-3 max-w-[1280px] mx-auto px-0">
+
+			<div class="relative group">
+				<div class="pb-2 mb-2 absolute -inset-3 bg-gradient-to-r from-pink-600 to-purple-600 rounded-xl blur opacity-50 group-hover:opacity-100 transition duration-200"></div>
+				<div class="relative sm:px-0 px-0">
+					<img src="/images/dapp-explorer2.png" class="shadow rounded-xl h-auto align-middle" alt="Dapp Explorer" />
+				</div>
+			</div>
+
 		</div>
-		<div class="flex flex-col mx-10 space-y-10 z-[2] text-right">
-			<h1 class="sm:mt-0 mt-10 text-4xl font-bold leading-[54px]">Discover dapps on Aptos through the <span class="character-gradient">Seam Explorer</span></h1>
-			<p class="leading-9">
-				Manage all your DeFi positions from one central dashboard. Evaluate aggregate risk, open & close positions across dapps, and track net performance.
-			</p>
-			<a href="https://app.seam.money/explorer/dapps/home">
-			<button class="seam-button w-fit py-[18px] px-9">View Dapps</button>
-			</a>
+
+		<div class="container my-24 pt-6 mx-auto max-w-[1280px]">
+			<section class="text-white text-center">
+				<div class="grid lg:gap-x-12 lg:grid-cols-3">
+				<div class="mb-12 lg:mb-0">
+					<div class="rounded-2xl border border-[3px] border-dashed shadow-lg h-full block">
+					<div class="flex justify-center">
+						<div class="p-4 bg-blue-600 rounded-full shadow-lg inline-block -mt-8">
+						<svg class="w-8 h-8 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+							<path fill="currentColor"
+							d="M192 208c0-17.67-14.33-32-32-32h-16c-35.35 0-64 28.65-64 64v48c0 35.35 28.65 64 64 64h16c17.67 0 32-14.33 32-32V208zm176 144c35.35 0 64-28.65 64-64v-48c0-35.35-28.65-64-64-64h-16c-17.67 0-32 14.33-32 32v112c0 17.67 14.33 32 32 32h16zM256 0C113.18 0 4.58 118.83 0 256v16c0 8.84 7.16 16 16 16h16c8.84 0 16-7.16 16-16v-16c0-114.69 93.31-208 208-208s208 93.31 208 208h-.12c.08 2.43.12 165.72.12 165.72 0 23.35-18.93 42.28-42.28 42.28H320c0-26.51-21.49-48-48-48h-32c-26.51 0-48 21.49-48 48s21.49 48 48 48h181.72c49.86 0 90.28-40.42 90.28-90.28V256C507.42 118.83 398.82 0 256 0z">
+							</path>
+						</svg>
+						</div>
+					</div>
+					<div class="p-6">
+						<h5 class="text-lg font-semibold mb-4">Support 24/7</h5>
+						<p>
+						Laudantium totam quas cumque pariatur at doloremque hic quos quia eius. Reiciendis
+						optio minus mollitia rerum labore facilis inventore voluptatem ad, quae quia sint.
+						Ullam.
+						</p>
+					</div>
+					</div>
+				</div>
+			
+				<div class="mb-12 lg:mb-0">
+					<div class="shadow-lg h-full block rounded-2xl border border-[3px] border-dashed">
+					<div class="flex justify-center">
+						<div class="p-4 bg-blue-600 rounded-full shadow-lg inline-block -mt-8">
+						<svg class="w-8 h-8 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+							<path fill="currentColor"
+							d="M466.5 83.7l-192-80a48.15 48.15 0 0 0-36.9 0l-192 80C27.7 91.1 16 108.6 16 128c0 198.5 114.5 335.7 221.5 380.3 11.8 4.9 25.1 4.9 36.9 0C360.1 472.6 496 349.3 496 128c0-19.4-11.7-36.9-29.5-44.3zM256.1 446.3l-.1-381 175.9 73.3c-3.3 151.4-82.1 261.1-175.8 307.7z">
+							</path>
+						</svg>
+						</div>
+					</div>
+					<div class="p-6">
+						<h5 class="text-lg font-semibold mb-4">Safe and solid</h5>
+						<p>
+						Eum nostrum fugit numquam, voluptates veniam neque quibusdam ullam aspernatur odio
+						soluta, quisquam dolore animi mollitia a omnis praesentium, expedita nobis!
+						</p>
+					</div>
+					</div>
+				</div>
+			
+				<div class="sm:mb-12 lg:mb-0">
+					<div class="rounded-2xl border border-[3px] border-dashed shadow-lg h-full block">
+					<div class="flex justify-center">
+						<div class="p-4 bg-blue-600 rounded-full shadow-lg inline-block -mt-8">
+						<svg class="w-8 h-8 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+							<path fill="currentColor"
+							d="M505.12019,19.09375c-1.18945-5.53125-6.65819-11-12.207-12.1875C460.716,0,435.507,0,410.40747,0,307.17523,0,245.26909,55.20312,199.05238,128H94.83772c-16.34763.01562-35.55658,11.875-42.88664,26.48438L2.51562,253.29688A28.4,28.4,0,0,0,0,264a24.00867,24.00867,0,0,0,24.00582,24H127.81618l-22.47457,22.46875c-11.36521,11.36133-12.99607,32.25781,0,45.25L156.24582,406.625c11.15623,11.1875,32.15619,13.15625,45.27726,0l22.47457-22.46875V488a24.00867,24.00867,0,0,0,24.00581,24,28.55934,28.55934,0,0,0,10.707-2.51562l98.72834-49.39063c14.62888-7.29687,26.50776-26.5,26.50776-42.85937V312.79688c72.59753-46.3125,128.03493-108.40626,128.03493-211.09376C512.07526,76.5,512.07526,51.29688,505.12019,19.09375ZM384.04033,168A40,40,0,1,1,424.05,128,40.02322,40.02322,0,0,1,384.04033,168Z" />
+						</svg>
+						</div>
+					</div>
+					<div class="p-6">
+						<h5 class="text-lg font-semibold mb-4">Extremely fast</h5>
+						<p>
+						Enim cupiditate, minus nulla dolor cumque iure eveniet facere ullam beatae hic
+						voluptatibus dolores exercitationem? Facilis debitis aspernatur amet nisi?
+						</p>
+					</div>
+					</div>
+				</div>
+				</div>
+			</section>
+			</div>
 		</div>
-	</div>
 </section>
 
-<section class="xss:py-6 sm:py-20 py-40 pt-96">
+<section class="xss:py-6 -sm:py-40">
 	<div class="block md:flex justify-between mx-auto py-3 max-w-7xl sm:pt-10 -mt-38">
 		<div class="relative sm:px-0 px-6">
 			<img src="/images/function.png" class="border border-[3px] border-dashed rounded-2xl transform transition duration-300 hover:scale-110 cursor-pointer" width={970} height={920} alt="Function" />
@@ -247,11 +323,13 @@
 		width: 100%;
 		background-image: 
 		url("/static/images/background2.svg");
+		background-repeat: no-repeat;
 	}
 	.dope-background {
 		width: 100%;
 		background-image: 
 		url("/static/images/background.svg");
+		background-repeat: no-repeat;
 	}
 	@media screen and (min-width: 10px) and (max-width: 480px) {
 		.dope-background {
