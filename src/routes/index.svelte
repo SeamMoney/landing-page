@@ -67,7 +67,6 @@
 </script>
 
 <!-- Hero section -->
-
 <section class="dope-background py-40 sm:mt-20 px-6 sm:px-10">
 	<div class="md:flex sm:block justify-between mx-auto max-w-7xl mt-20">
 		<div class="flex flex-col md:w-1/2 sm:w-full">
@@ -309,26 +308,28 @@
   		color: black;
 	}
 	.dope-background2 {
-		width: 100%;
 		background-image: 
 		url("/static/images/background2.svg");
 		background-repeat: no-repeat;
+		background-size: cover;
 	}
 	.dope-background {
-		width: 100%;
 		background-image: 
 		url("/static/images/background.svg");
 		background-repeat: no-repeat;
+		background-size: cover;
 	}
 	@media screen and (min-width: 10px) and (max-width: 480px) {
 		.dope-background {
 			background-image: 
 			url("/static/images/background_scaled.svg");
 			background-repeat: no-repeat;
+			background-size: cover;
 		}
 		.dope-background2 {
 			background-image: url("/static/images/dope-background3_scaled.svg");
 			background-repeat: no-repeat;
+			background-size: cover;
 		}
 	}
 </style>
