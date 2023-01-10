@@ -233,7 +233,7 @@
 		<div class="relative sm:px-0 px-6">
 			<img src="/images/function.png" class="border border-[3px] border-dashed rounded-2xl transform transition duration-300 hover:scale-110 cursor-pointer" width={970} height={920} alt="Function" />
 		</div>
-		<div class="flex flex-col mx-10 space-y-10 z-[2] text-right">
+		<div class="flex flex-col mx-6 space-y-10 z-[2] text-right">
 			<h1 class="sm:mt-0 mt-10 text-4xl font-bold leading-[54px]">
 				Examine <span class="character-gradient">Move modules</span> and build your dream DeFi position
 			</h1>
