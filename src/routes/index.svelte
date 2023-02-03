@@ -13,7 +13,7 @@
 
 	const getCards = async () => {
 		let promiseArray = [];
-		let cardFetch = await fetch("https://raw.githubusercontent.com/simeydotme/pokemon-cards-css/main/public/data.json");
+		let cardFetch = await fetch("https://raw.githubusercontent.com/simeydotme/pokemon-cards-css/main/public/data/cards.json");
 		let cards = await cardFetch.json();
 		return cards;
 	};
@@ -71,7 +71,7 @@
 	<div class="md:flex sm:block justify-between mx-auto max-w-7xl mt-20">
 		<div class="flex flex-col md:w-1/2 sm:w-full">
 			<h1 class="text-5xl font-bold leading-[64px]">
-				<span class="character-gradient">Composable</span> DeFi Products on Aptos
+				<span class="character-gradient animate-bounce inline-block">Composable</span> DeFi Products on Aptos
 			</h1>
 			<a href="https://app.seam.money">
 				<button class="seam-button mt-8 w-fit text-lg">Launch App</button>
