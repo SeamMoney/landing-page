@@ -46,7 +46,9 @@
 					<a href={menu.link} class="nav-link-mobile">{menu.name}</a>
 				{/each}
 				<br/>
-				<button class="seam-button mt-8 w-fit text-lg">Launch App</button>
+				<a href="https://app.seam.money/explorer/modules/mainnet/0x1">
+					<button class="seam-button mt-8 w-fit text-lg">Launch App</button>
+				</a>
 			</div>
 
 			<div

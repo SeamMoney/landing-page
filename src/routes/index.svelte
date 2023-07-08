@@ -73,7 +73,7 @@
 			<h1 class="text-5xl font-bold leading-[64px]">
 				<span class="character-gradient inline-block">Composable</span> DeFi Products on Aptos
 			</h1>
-			<a href="https://app.seam.money">
+			<a href="https://app.seam.money/explorer/modules/mainnet/0x1">
 				<button class="seam-button mt-8 w-fit text-lg">Launch App</button>
 			</a>
 		</div>
